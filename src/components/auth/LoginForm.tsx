@@ -9,6 +9,7 @@ import clsx from "clsx"
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { authenticate } from "@/actions/auth/login"
+import Link from "next/link"
 
 
 
@@ -72,6 +73,12 @@ export const LoginForm = () => {
         <div className="px-2 text-gray-800">O</div>
         <div className="flex-1 border-t border-gray-500"></div>
       </div>
+
+      <Link
+        href="/auth/new-account"
+        className={`btn-secondary text-center ${bodyFont.className}`}>
+        Crear una nueva cuenta
+      </Link>
 
     </form>
   )
