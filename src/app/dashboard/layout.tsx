@@ -1,5 +1,5 @@
 import { auth } from "@/auth.config";
-import { Navbar, Sidebar } from "@/components";
+import { Navbar, Sidebar, SidebarResponsive } from "@/components";
 import { redirect} from "next/navigation";
 
 export default async function DashboardLayout({
@@ -23,6 +23,8 @@ export default async function DashboardLayout({
 
       <div className="flex overflow-hidden bg-white pt-16">
         
+        <SidebarResponsive/>
+
         <Sidebar/>
 
         <div
